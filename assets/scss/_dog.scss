@@ -1,0 +1,95 @@
+.dog{
+    margin-top: 60px;
+}
+.dog > div{
+    background-image: url(../img/dog.png);
+    background-position: right;
+    background-size: cover;
+    height: 70vh;
+    border-radius: 20px;
+}
+.dog-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 80px;
+}
+.dog-text h1{
+    font-weight: 800;
+    font-size: 52px;
+    line-height: 68px;
+    text-transform: capitalize;
+    color: #003459;
+}
+.dog-text h2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    text-transform: capitalize;
+    color: #003459;
+}
+.dog-text p{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #242B33;
+}
+.dog-text button{
+    width: 163px;
+    height: 48px;
+    background: #003459;
+    border: none;
+    border-radius: 57px;
+    color: #ffff;
+}
+.dog-text button:nth-of-type(2){
+    width: 163px;
+    height: 48px;
+    background: transparent;
+    border-radius: 57px;
+    color: #003459;
+    border: 1px solid #003459;
+}
+@media(max-width:580px){
+    .dog > div{
+        background-image: url(../img/dog.png);
+        background-position: right;
+        background-size: cover;
+        height: 80vh;
+    }
+    .dog-text button{
+        width: 100px;
+        height: 40px; 
+    }
+    .dog-text button:nth-of-type(2){
+        width: 100px;
+        height: 40px;
+    }
+    .dog-text h1{
+        font-size: 40px;
+    }
+    .dog-text h2{
+        font-size: 28px;
+    }
+    .dog-text > div{
+        display: flex;
+        gap: 10px;
+    }
+}
+@media(max-width:400px){
+    .dog-text h2{
+        display: none;
+    }
+    .dog-text button{
+        font-size: 8px;
+    }
+    .dog-text > div{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media(max-width:300px){
+    .dog-text h1{
+        font-size: 24px;
+    }
+}

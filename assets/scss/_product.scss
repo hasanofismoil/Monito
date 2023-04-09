@@ -1,0 +1,112 @@
+.product{
+    margin-top: 60px;
+}
+.product-title{
+    display: flex;
+    justify-content: space-between;
+    // align-items: flex-end;
+}
+.product-title span{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+.product-title h1{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #003459;
+}
+.product-title button{
+    width: 151px;
+    height: 44px;
+    border: 2px solid #003459;
+    border-radius: 57px;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #003459;
+}
+.product-cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+.pro-card{
+    padding: 8px;
+    width: 280px;
+    height: 446px;
+    background: #FDFDFD;
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.403);
+    border-radius: 12px;
+}
+.pro-card img{
+    border-radius: 10px;
+}
+.pro-card h3{
+    padding-bottom: 8px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #00171F;
+}
+.pro-card p{
+    padding-bottom: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #667479;
+}
+.pro-card > div{
+    width: 248px;
+    height: 34px;
+    background: #FCEED5;
+    border-radius: 8px;
+    padding-top: 3px;
+    padding-left: 10px;
+}
+.pro-card span{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #002A48;
+}
+@media(max-width:1300px){
+    .product-cards{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media(max-width:1020px){
+    .product-cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media(max-width:650px){
+    .product-cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media(max-width:580px){
+    .product-title{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+@media(max-width:300px){
+    .pro-card{
+        width: 260px;
+    }
+    .pro-card img{
+        width: 245px;
+    }
+    .pro-card > div img{
+        width: 20px;
+    }
+}
